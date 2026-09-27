@@ -33,7 +33,7 @@ cd dogstagram
 npx expo start
 ```
 
-> **Select SDK 54.** If the CLI prompts for an SDK version, choose SDK 54. A mismatch between the project SDK and the Expo Go app installed on the learner's phone is the most common source of "it will not load" issues in this session.
+> **Select SDK 57** to match the Expo Go app on your phone or simulator.
 
 Start the iOS or Android simulator (or open Expo Go on your phone) and confirm the default app is running before continuing. We will install additional packages as we need them, so you can see exactly why each one is there.
 

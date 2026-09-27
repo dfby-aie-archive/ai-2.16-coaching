@@ -35,7 +35,7 @@ cd mobile-crm
 npx expo start
 ```
 
-> **Select SDK 54**, matching the Expo Go app on your phone or simulator, the same requirement as in the main Dogstagram lesson.
+> **Select SDK 57**, matching the Expo Go app on your phone or simulator, the same requirement as in the main Dogstagram lesson.
 
 You will reuse the MockAPI.io project you created in Lesson 2.11. If you no longer have the base URL handy, it is in `src/App.jsx` of your web CRM project, on the line that defines `API_BASE`.
 
