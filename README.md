@@ -24,7 +24,7 @@ A coaching session that consolidates the React Native core components, styling, 
 | 25 min | Part 2: FlatList | Render images, empty state, scroll-to-end with useRef |
 | 10 min | Activity 1 | Wire up buttons; add Alert confirmation before clearing |
 | 20 min | Part 3: Custom Button component | Pressable with pressed-state feedback, platform shadows, children prop |
-| 15 min | Part 4: LoadingOverlay and color tokens | StyleSheet.absoluteFillObject, ActivityIndicator, styles/colors.js |
+| 15 min | Part 4: LoadingOverlay and color tokens | StyleSheet.absoluteFill, ActivityIndicator, styles/colors.js |
 | 10 min | Activity 2 | Gradient background with expo-linear-gradient |
 | 10 min | Wrap up and Q&A | Recap, bonus challenges for fast finishers |
 | **Total** | | **~150 min - allows a buffer for questions and pacing** |

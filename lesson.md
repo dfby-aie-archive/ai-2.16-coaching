@@ -285,13 +285,13 @@ Right now the spinner pushes into the layout below the images. Let's make it flo
 ```jsx
 // App.js
 loadingOverlay: {
-  ...StyleSheet.absoluteFillObject,
+  ...StyleSheet.absoluteFill,
   justifyContent: "center",
   alignItems: "center",
 },
 ```
 
-`StyleSheet.absoluteFillObject` expands to `{ position: "absolute", top: 0, right: 0, bottom: 0, left: 0 }` - a convenient shortcut for anything that should cover its parent entirely, such as overlays or backgrounds. We are leaving `backgroundColor` off here so the overlay blends into whatever is behind it, whether that is a plain background now or the gradient we add in Part 3.
+`StyleSheet.absoluteFill` expands to `{ position: "absolute", top: 0, right: 0, bottom: 0, left: 0 }` - a convenient shortcut for anything that should cover its parent entirely, such as overlays or backgrounds. We are leaving `backgroundColor` off here so the overlay blends into whatever is behind it, whether that is a plain background now or the gradient we add in Part 3.
 
 ---
 
@@ -858,7 +858,7 @@ export default function LoadingOverlay() {
 
 const styles = StyleSheet.create({
   loadingOverlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -985,7 +985,7 @@ return (
       <ImageBackground
         source={require("./assets/images/wallpaper.jpg")}
         style={{ flex: 1 }}
-        imageStyle={{ opacity: 0.03 }}
+        imageStyle={{ opacity: 0.3 }}
       >
         <SafeAreaView style={{ flex: 1 }}>
           {/* ...existing content... */}
@@ -1019,7 +1019,7 @@ Reload the app and confirm the faint pattern is visible behind the gradient.
 - **`Pressable`** with a function-style `style` prop enables pressed-state feedback that works consistently on iOS and Android.
 - **Component extraction** - `Button` and `LoadingOverlay` - keeps `App.js` focused on layout and data flow rather than styling details.
 - **Color tokens** in `styles/colors.js` centralise the palette so changes propagate everywhere automatically.
-- **`StyleSheet.absoluteFillObject`** is the idiomatic way to make an overlay fill its parent container.
+- **`StyleSheet.absoluteFill`** is the idiomatic way to make an overlay fill its parent container.
 - **`useFonts`** loads custom fonts asynchronously, returning a boolean you can use to hold back rendering until the fonts are ready.
 - **`ImageBackground`** layers an image behind its children, useful for subtle background texture without an extra absolutely-positioned `Image`.
 
